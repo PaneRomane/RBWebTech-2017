@@ -1,0 +1,19 @@
+.clearfix() {
+  overflow: hidden;
+  zoom:1;
+  &:before{
+    content:"";
+    display:table;
+  }
+  &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+// ---------Fonts-----------
+.font(@family: arial, @size: 1.0em, @lineheight: 1.0, @weight: normal, @style: normal, @variant: normal) {
+  font: @style @variant @weight @size~"/"@lineheight @family;
+} 
+// --------------------------

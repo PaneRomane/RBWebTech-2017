@@ -1,0 +1,21 @@
+#about {
+    background-color: #17402F;
+    text-align: center;
+    margin: 0;
+}
+#about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+#about h2{
+    padding-top: 20px;
+    font-size: 25pt;
+    color: #F5C4BF;
+}
+#about p {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 17pt;
+    color: whitesmoke;
+}

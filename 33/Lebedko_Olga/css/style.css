@@ -1,0 +1,91 @@
+/* general styles */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    height: 100%;
+    margin: 0;
+}
+
+body { 
+    background-color: transparent;
+}
+
+.section {
+    min-height: 100%;
+    padding-top: 120px; /* відступ для секцій вгорі відповідно висоті навбар-меню */
+}
+.text-center {
+    text-align: center;    
+}
+
+/* елементи сітки */
+.row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.col {
+    flex: 1;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+/* /елементи сітки */
+
+/* перевизначаємо властивості елементів з header.css */
+
+.header-fixed {
+    background-color: antiquewhite;
+}
+.navbar {
+    line-height: initial;
+}
+.navbar nav li {
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+.navbar nav li.active {
+    background: #FDB54E;
+    color: #fff;
+}
+.navbar nav li:hover {
+    background: #221F45;
+    color: #fff;
+}
+.navbar nav li a {
+    color: inherit !important;
+}
+.logo{
+    background: #87c8f1:
+}
+
+/* колір кнопки меню у моб версії */
+.navbar label i, .navbar label i:before, .navbar label i:after {
+    background: #221F45;
+}

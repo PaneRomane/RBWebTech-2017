@@ -1,0 +1,11 @@
+        #home {
+        background-size: auto;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+        justify-content: center space-between;
+    }
+    
+    

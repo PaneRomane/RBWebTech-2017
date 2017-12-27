@@ -1,0 +1,18 @@
+#about p {
+ font-family: 'Caveat', cursive;
+    font-size: 25px;
+}#about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+     text-align: center;
+}
+#about {
+    background-color: aliceblue
+}
+.about-text {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}

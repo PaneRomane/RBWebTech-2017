@@ -1,0 +1,17 @@
+#zeppelin  {
+  display: block;
+    position: absolute;
+    margin-left: -173px;
+    top: 75px;
+    z-index: 10;
+    animation: zeppelinFly 75s infinite linear;
+}
+
+@keyframes zeppelinFly {
+    0% {
+        margin-left: -173px
+    }
+    100% {
+        margin-left: 400%
+    }
+}

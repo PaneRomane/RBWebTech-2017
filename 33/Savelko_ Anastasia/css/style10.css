@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    align-content: center;
+    list-style-type: none;
+    height: 40px;
+    padding: 0;
+}
+
+li {
+    flex-grow: 1;
+    align-self: stretch;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.header {
+    background-color: skyblue;
+}
+
+

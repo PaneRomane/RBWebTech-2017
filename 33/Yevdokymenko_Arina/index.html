@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Моя_сторінка</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Comfortaa" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/style11a.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"> 
+
+    <link type="text/css" rel="stylesheet" href="js/lightGallery/dist/css/lightgallery.css" />
+</head>
+
+
+
+<body>
+    <div class="header header-fixed">
+        <div class="navbar container">
+            <div class="logo"><a href="#home"><img src="img/logo.jpg" width="260px"></a></div>
+            <input type="checkbox" id="navbar-toggle">
+            <label for="navbar-toggle"><i></i></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#top">Головна</a></li>
+                    <li><a href="#about">Про мене</a></li>
+                    <li><a href="#portfolio">Портфоліо</a></li>
+                    <li><a href="#contacts">Контакти </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+     <div id="home" class="section">
+        <div class="slider">
+            <div class="carousel">
+              <div class="carousel-item">
+                <img src="img/005.jpg">
+                  <div class="message">
+    <h1>Вітаю Вас на своїй сторінці!</h1>    
+    <p>Ілюстратор, живописець та просто цікава особистість</p>
+  </div>
+
+              </div>
+              <div class="carousel-item">
+                <img src="img/fon1.jpg">
+                 <div class="message">
+    <h1>Хутчіш огляньте портфоліо!</h1>
+    <p>З радістю чекатиму на Ваші відгуки</p>    
+   
+  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/fon3.jpg";>
+                <div class="message">
+                    <h1>Моя творчість відкрита для кожного </h1>
+   </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="row">
+            <div class="col text-center">
+
+                <h2>Про мене</h2>
+
+
+                <img src="img/006.jpg" class="img-responsive">
+
+
+                <div class="about-text">
+                    <p>Я народилась 15.06.1997 у Чернівцях. З семи років займаюсь художньою гімнастикою, проте у п'ятому класі вступила до художньої школи.Після успішного закінчення художньої школи, я поступила у Художнє училище за професією "живописець". В училищі я навчалась в себе в Чернівцях. Зараз навчаюсь на третьому курсі у ЛНАМ на графічному дизайні. </p>
+                    <p> Основні сфери зацікавлень: живопис, ілюстрація та шрифти. У вільний час малюю картини на замовлення. В майбутньому хотілось би працювати у сфері ілюстрації.</p>
+                    <p class="text-center"><a class="btn btn-primary" href="#"><i class="fa fa-download"></i>Завантажити резюме</a></p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="portfolio" class="section">
+        <div>Портфоліо</div>
+        <!-- start -->
+        <main id="main">
+            <nav class="nav">
+                <a href="#" class="nav-item active" data-rel="project">Усе</a>
+                <a href="#" class="nav-item" data-rel="option-1">Шрифти</a>
+                <a href="#" class="nav-item" data-rel="option-2">Ілюстрація</a>
+                <a href="#" class="nav-item" data-rel="option-3">Проектування</a>
+            </nav>
+
+            <ul class="portfolio">
+
+
+                <li class="project option-1">
+                    <a href="img/my_planet.jpg">
+                        <!-- Тут -->
+
+
+                        <div class="project-image"><img src="img/my_planet.jpg" /></div>
+
+
+                        <div class="project-info">
+                            <h2 class="project-info-title">Моя планета</h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+
+                <li class="project option-2">
+
+                    <a href="img/walking.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/walking.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Персонаж "масажист"
+                            </h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+
+                <li class="project option-3">
+                    <a href="img/design1.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/design1.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Твін Пікс
+                            візитки</h2>
+
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+
+                <li class="project option-2">
+                    <a href="img/running.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/running.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Персонаж в русі
+                            </h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+
+                <li class="project option-3">
+                    <a href="img/design2.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/design2.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Твін Пікс меню</h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+
+                </li>
+
+                <li class="project option-1">
+                    <a href="img/santorini.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/santorini.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Санторіні</h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+
+                <li class="project option-3">
+                    <a href="img/design3.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/design3.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Твін Пікс інтер'єр</h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+
+                <li class="project option-1">
+                    <a href="img/ligature.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/ligature.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Готичний летерінг
+                            </h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+
+                <li class="project option-2">
+                    <a href="img/tired.jpg">
+                        <!-- Тут -->
+                        <div class="project-image"><img src="img/tired.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Стомлений
+                            </h2>
+
+                        </div>
+                    </a>
+                    <!-- Тут -->
+                </li>
+            </ul>
+        </main>
+
+
+
+  
+
+    <!-- kinec -->
+    </div>
+
+
+    <div id="contacts" class="section">
+    <div>Контакти</div>
+
+        <div class="row">
+            <div class="col text-center">
+                <h2>Зв'язок зі мною</h2>
+
+                <p>Готові розпочати зі мною новий проект? Це чудово! Зателефонуйте або відправте листа і я відповім якомога швидше!</p>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="https://www.facebook.com/arina.yevdokymenko" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="http://arinayevdokymenko@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="https://www.instagram.com/arina_yevdokymenko/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+    
+   
+
+
+    <!--Icon Font https://fontawesome.com/icons?d=gallery&m=free -->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js">
+    </script>
+
+    <!-- jQuery framework -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+    <!-- Releated to Portfolio -->
+    <script>
+        $(document).ready(function() {
+            $('.nav-item').click(function() {
+                $('ul.portfolio').css('height', $('ul.portfolio').height());
+
+                // reset active class
+                $('.nav-item').removeClass("active");
+                // add active class to selected
+                $(this).addClass("active");
+                // return needed to make function work
+                return false;
+            });
+            $(function() {
+                // create an empty variable
+                var selectedClass = "";
+                // call function when item is clicked
+                $(".nav-item").click(function() {
+                    // assigns class to selected item
+                    selectedClass = $(this).attr("data-rel");
+                    // fades out all portfolio items
+                    $(".portfolio li").removeClass('selected').fadeOut(300);
+                    // fades in selected category
+                    $(".portfolio li." + selectedClass).addClass('selected').delay(300).fadeIn(300);
+                });
+            });
+
+        }); // document ready
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/lightGallery/dist/js/lightgallery-all.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('ul.portfolio')
+                .on('click', function(e) {
+                    var $lightGalleryEls = [],
+                        $portfolio = $(this).find('.selected');
+                    $portfolio.each(function(index) {
+                        $lightGalleryEls.push({
+                            'src': $(this).find('a').attr('href'),
+                            'thumb': $(this).find('img').attr('src'),
+                            'subHtml': $(this).find('.project-info').text()
+                        });
+                    });
+                    if ($(this).data('lightGallery')) $(this).data('lightGallery').destroy(true);
+                    $(this).lightGallery({
+                        dynamic: true,
+                        dynamicEl: $lightGalleryEls,
+                        selector: 'a'
+                    });
+                    e.preventDefault();
+                })
+                .find('li').addClass('selected');
+        });
+    </script>
+
+<!-- Navbar -->
+    <script src="js/navbar.js"></script>
+    <script src="js/scrollspy.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("nav.menu").scrollspy({
+                offset: 60
+            });
+        }); // document ready
+    </script>
+ 
+<!-- slick slider  -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            cssEase: 'linear',        
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            arrows: true,
+            dots: true
+        });
+    });
+    </script>
+
+</body>
+
+</html>

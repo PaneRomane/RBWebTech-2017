@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/css/lightgallery.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+
+    <link rel="stylesheet" type="text/css" href="css/contacts.css">
+
+    <!-- У цьому файлі при потребі перевизначимо властивості -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+ <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Marmelad" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- navbar-меню винесли за рамки ел .wrapper і встановили в css position: fixed; -->
+    <div class="header header-fixed">
+        <div class="navbar container">
+            <div class="logo">
+                <a href="#home"><img src="img/logo2.png"></a>
+            </div>
+            <!-- кнопка меню, відображ ЛИШЕ для моб та планшету -->
+                <input type="checkbox" id="navbar-toggle">
+                <label for="navbar-toggle"><i></i></label>
+            <!-- /кнопка меню -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div><!-- / header-fixed -->
+     
+
+    <div class="wrapper container">
+
+        <div id="home" class="section">
+            <div class="row">
+                <div class="col">
+                    <img src="img/tityl1.jpg">
+                    <a href="#about" class="scroll">Scroll for more</a>
+                </div>
+            </div>
+        </div><!-- / home --> 
+                  
+
+        <div id="about" class="section">
+          
+            <div class="row"> 
+               
+               <div class="col text-center">
+                    <h2>Про мене</h2>
+                   
+
+                    <div class="about-text">
+                        <p>Я народилась 08.04.1998р. у Києві. Змалку мріяла стати художником. Навчалась у КІнК КНУБА на кафедрі графіки та отримала диплом молодшого спеціаліста у 2017 році.Зараз навчаюсь у ЛНАМ на кафедрі графічного дизайну. </p>
+                        <p>Активно беру участь у мистецьких виставках та конкурсах. Основні сфери зацікавлень: живопис, рисунок, станкова графіка та графічний дизайн. Працюю в сфері ілюстрації та плакату.</p>
+                        
+                      
+                        
+                    </div>
+
+               </div>
+            </div>
+        </div><!-- / about -->       
+        
+        
+        <div id="portfolio" class="section">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Portfolio</h2>
+                    <main id="main">
+                        <nav class="nav">
+                            <a href="#" class="nav-item active" data-rel="project">All</a>
+                            <a href="#" class="nav-item" data-rel="Photogrephy">Photography</a>
+                            <a href="#" class="nav-item" data-rel="Illustration">Illustration</a>
+                            <a href="#" class="nav-item" data-rel="Branding">Branding</a>
+                            <a href="#" class="nav-item" data-rel="Art">Art</a>  
+                        </nav>
+                        <!-- значення data-rel="ХХХХХХ" відповідає класу елементів li class="project ХХХХХХ"  -->
+                        <ul class="portfolio">
+                            <li class="project Photogrephy">
+                                <a href="img/photography/IMG_1918.JPG">
+                                    <div class="project-image"><img src="img/photography/IMG_19181.jpg" alt="photo" /></div>
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Photo1</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Photogrephy">
+                                <a href="img/photography/f32IMG_6957.JPG">
+                                    <div class="project-image"><img src="img/photography/f32IMG_6957.JPG" alt="photo" /></div>
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Photo2</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Photogrephy">
+                                <a href="img/photography/IMG_2004111.JPG">
+
+                                    <div class="project-image"><img src="img/photography/IMG_20041112.JPG" alt="photo" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Photo3</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Photogrephy">
+                                <a href="img/photography/IMG_2261.JPG">
+
+                                    <div class="project-image"><img src="img/photography/IMG_22611.jpg" alt="photo" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Photo4</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Photogrephy">
+                                <a href="img/photography/IMG_9277.JPG">
+
+                                    <div class="project-image"><img src="img/photography/IMG_92771.jpg" alt="photo" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Photo5</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Photogrephy">
+                                <a href="img/photography/IMG_2255.JPG">
+
+                                    <div class="project-image"><img src="img/photography/IMG_22551.jpg" alt="photo" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Photo6</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Illustration">
+                                <a href="img/S22C-116051609210_0002.jpg">
+                                    <div class="project-image"><img src="img/S22C-116051609210_00021.jpg" alt="Sports Image" /></div>
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Jane Eyer</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Illustration">
+                                <a href="img/S22C-116051609210_00012.jpg">
+
+                                    <div class="project-image"><img src="img/S22C-116051609210_000121.jpg" alt="Sports Image" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Jane Eyer</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Illustration">
+                                <a href="img/S22C-116051609210_000312.jpg">
+                                    <div class="project-image"><img src="img/S22C-116051609210_0003121.jpg" alt="Sports Image" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Jane Eyer</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Branding">
+                                <a href=img src="img/procect/plakat21.jpg">
+                                    <div class="project-image"><img src="img/procect/plakat11.jpg" alt="Sports Image" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">"Far-For" design conception</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Branding">
+                                <a href=img src="img/procect/1.jpg">
+                                    <div class="project-image"><img src="img/procect/11.jpg" alt="Sports Image" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">Paper bag branding</h2>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="project Branding">
+                                <a href=img src="img/LetterpressCard-03.jpg">
+                                    <div class="project-image"><img src="img/procect/LetterpressCard-031.jpg" alt="Sports Image" /></div>
+
+                                    <div class="project-info">
+                                        <h2 class="project-info-title">beauty-room cards design</h2>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </main>
+                </div>
+            </div>
+        </div> <!-- / portfolio --> 
+
+        <div id="contacts" class="section">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Let's Get In Touch!</h2>
+
+                    <p>Ready to start your next project with me? That's great! Give me a call or send me an email and I will get back to you as soon as possible!</p>
+
+                    <div class="row">
+                        <div class="col text-center">
+                            <a class ="icon" rel="contact" href="https://www.instagram.com/olya_lebedko/" target="_blank">
+        <img src="img/Instagram_icon-icons.com_66804.png" alt title="Лебедко Оля">
+      </a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="https://plus.google.com/u/0/103413415307609955238" 
+                            target="_blank"><i class="fas fa-envelope"></i></a>
+                        </div>
+                        
+
+                </div>
+            </div>
+        </div> <!-- / contacts --> 
+
+    </div><!-- / .wrapper --> 
+
+    <!-- / кінець HTML контенту --> 
+    <!--##################################### -->
+    <!--##################################### -->
+    <!-- Початок Магії скриптів --> 
+    
+    <!--підключення іконочного шрифта -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    
+    <!-- підключення jQuery фреймворку  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Скрипти для Portfolio -->
+    <script>
+        $(document).ready(function() {
+            $('.nav-item').click(function() {
+                $('ul.portfolio').css('height', $('ul.portfolio').height());
+                // reset active class
+                $('.nav-item').removeClass("active");
+                // add active class to selected
+                $(this).addClass("active");
+                // return needed to make function work
+                return false;
+            });
+            $(function() {
+                // create an empty variable
+                var selectedClass = "";
+                // call function when item is clicked
+                $(".nav-item").click(function() {
+                    // assigns class to selected item
+                    selectedClass = $(this).attr("data-rel");
+                    // fades out all portfolio items
+                    $(".portfolio li").removeClass('selected').fadeOut(300);
+                    // fades in selected category
+                    $(".portfolio li." + selectedClass).addClass('selected').delay(300).fadeIn(300);
+                });
+            });
+        }); // document ready
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/js/lightgallery-all.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('ul.portfolio').find('li').addClass('selected');
+            try {
+                $('ul.portfolio .project a').click( function(event) {                
+                    var $lightGalleryEls = [], 
+                        $portfolio = $(this).parents().find('.portfolio'),
+                        $selected  = $portfolio.find('.selected');
+
+                      $selected.each(function( index ) {
+                      $lightGalleryEls.push({
+                        'src': $(this).find('a').attr('href'),
+                        'thumb': $(this).find('img').attr('src'),
+                        'subHtml': $(this).find('.project-info').text()
+                      });
+                    });
+
+                    if($portfolio.data('lightGallery')) $portfolio.data('lightGallery').destroy(true);
+                    var $index = $selected.index( $(this).parent() ) ;
+
+                    $portfolio.lightGallery({
+                        index: $index,
+                        dynamic: true,
+                        dynamicEl: $lightGalleryEls,
+                        selector: 'a'
+                    });
+                    event.preventDefault();
+                })
+            }
+            catch (error) {
+               console.log(error);
+               e.preventDefault();
+            }        
+        }); // document ready
+    </script>
+
+    <!-- Скрипти для Navbar-меню -->
+    <script>
+        $(document).ready(function() {
+            // Select all links with hashes
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function (event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
+        }); // document ready    
+    </script>
+    <script src="https://rawgit.com/r3plica/Scrollspy/master/scrollspy.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("nav.menu").scrollspy({
+                offset: 60
+            });
+        }); // document ready
+    </script>
+
+    <!-- /* slick slider --
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            cssEase: 'linear',        
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            arrows: true,
+            dots: true
+        });
+    });
+    </script> 
+    */ -->
+    
+    <!-- Скрипти що допомагає підскролити до наступної секції -->
+    <!-- https://projects.lukehaas.me/scrollify -->
+    <!-- A jQuery plugin that assists scrolling and smoothly snaps to sections. Fully configurable and optimised for touch. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.17/jquery.scrollify.min.js"></script> 
+    <script>
+        $(document).ready(function() {
+            $.scrollify({
+                section : ".section",
+            });
+        }); // document ready
+    </script>   
+   
+   
+    <!-- / кінець скриптів -->
+</body>
+</html>

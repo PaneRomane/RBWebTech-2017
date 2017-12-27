@@ -1,0 +1,112 @@
+<html lang="uk">
+<html lang="en">
+<head>
+  <title>PORTFOLIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+
+<body>
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#project">Project</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="content" id="home">
+	<div class="c1">
+  		<h2 > PORTFOLIO </h2>
+  		<p> SOPHIA PRONIUK </p>
+	</div>
+</div>
+
+<div class="info">
+	<img src="img/ja.jpg" alt="Me" style="width:300px">
+    <p class ="absolute"><br> Софія-Ольга Пронюк <br> 19 років <br> Вивчаю графічний дизайн у Львовіській Національній Академії Мистецтв <br> Живу у Львові <br>Відкрита для співпраці<br>Допоможу зі створенням візиток, логотипів, фірмового стилю.<br></p>
+</div>
+
+<div class="content" id="about">
+	<div class="c1">
+  		<h2 > PORTFOLIO </h2>
+  		<p> SOPHIA PRONIUK </p>
+	</div>
+</div>
+
+<div class="info">
+	<img src="img/loh.jpg" alt="Me" style="width:300px">
+    <p class ="absolutes"><br> Софія Пронюк <br> Народилася 25 липня 1998 року у місті Львів. Навчаюся на третьому курсі Львівської Національної Академії Мистецтв. До того навчалася чотири роки в Львівському Коледжі імені Івана Труша. Закінчила Львівську Лінгвістичну гімназію. <br> Люблю подорожувати, читати, проводити час з друзями. <br>Тваринки, кава і книжки - моє все. <br>Займаюся створенням логотипів, візиток, фірмового стилю, малюю творчі роботи. <br> "Беги и пой, кричи и танцуй, ты урод, пусть знает весь мир - ты родился от дерева и от струй лесного ручья под ним. Ура, Ура! <br></p>
+</div>
+    
+    
+<div class="content" id="contact">
+	<div class="c1">
+  		<h2 > PORTFOLIO </h2>
+  		<p> MY CONTACTS </p>
+	</div>
+</div>
+
+  <div class="contact">
+    <div class="col-sm-5"  style="margin-left: 30px">
+      <h3>Contact me and we'll get back to you within 24 hours!</h3><br>
+      <h4>Current city: Lviv, Ukraine</h4>
+      <h4>Phone: +380639316362</h4>
+      <h4>E-mail: emypond@gmail.com</h4>
+      <h4>Facebook: <a href="https://www.facebook.com/morireallalba"> Sophia Proniuk </a></h4>
+    </div>
+  </div>    
+
+<div class="content" id="project">
+	<div class="c1">
+  		<h2 > PORTFOLIO </h2>
+  		<p> MY PROJECT </p>
+	</div>
+</div>
+<div class="info">
+<h2 class="w3-center">Christmas card project</h2>
+
+<div class="w3-content w3-section" style="max-width:500px;">
+  <img class="mySlides" src="img/1.jpg" style="width:60%">
+  <img class="mySlides" src="img/2.jpg" style="width:60%">
+  <img class="mySlides" src="img/3.jpg" style="width:60%">
+</div>
+    </div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div class="footer"><br>
+    <p> © 2017 Sophia Proniuk </p> 
+</div>
+
+<button onclick="topFunction()" class="ip" id="up" title="Go to top">Go Top</button>
+ 
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("up").style.display = "block";
+    } else {
+        document.getElementById("up").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>

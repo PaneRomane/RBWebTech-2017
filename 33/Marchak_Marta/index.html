@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>web11</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> </head>
+<style>
+    /*
+css/style11b.css
+*/
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0px;
+    }
+    
+    html,
+    body,
+    .wrapper {
+        height: 100%;
+    }
+    
+    .wrapper>* {}
+    
+    .section {
+        min-height: 100%;
+    }
+    
+    #home {
+        /* background-color: #282c37;*/
+        background-color: #F0E5DE;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    #about {
+        background-color: #F0E5DE;
+    }
+    
+    #portfolio {
+        background-color: #C65146;
+    }
+    
+    #contacts {
+        background-color: #a79c8e;
+    }
+    
+    .header-fixed {
+        position: fixed;
+        top: 0;
+        z-index: 2017;
+        width: 100%;
+        background-color: inherit;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header>* {
+        flex: 1;
+    }
+    
+    .header .logo {
+        flex: 3;
+    }
+    
+    .header nav {
+        flex: 8;
+    }
+    
+    .header nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    
+    .header nav li {
+        flex: 1;
+    }
+    
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+    @import url(https://fonts.googleapis.com/css?family=Merriweather);
+    body {
+        font-family: "Merriweather", serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 1260px;
+        margin: 0 auto;
+    }
+    
+    .nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        flex: 1 1 auto;
+        padding: 10px 20px;
+        margin-top: 40px;
+    }
+    
+    .nav-item {
+        position: relative;
+        padding: 0 5px;
+        margin: 0 5px;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #fafafa;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+    
+    .nav-item:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #595959;
+        transition: all 500ms;
+    }
+    
+    .nav-item.active {
+        color: #005f6b;
+        transition: all 350ms;
+    }
+    
+    .nav-item.active:before {
+        width: 100%;
+    }
+    
+    .portfolio {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    .project {
+        position: relative;
+        flex: 1 0 calc(100% - 20px);
+        margin: 10px;
+    }
+    
+    .project:hover .project-info {
+        background: rgba(89, 89, 89, 0.7);
+    }
+    
+    @media (min-width: 520px) {
+        .project {
+            flex: 0 0 calc((100% / 2) - 20px);
+        }
+    }
+    
+    @media (min-width: 860px) {
+        .project {
+            flex: 0 0 calc((100% / 3) - 20px);
+        }
+    }
+    
+    .project-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: #f6f6f6;
+        background: rgba(89, 89, 89, 0.8);
+        opacity: 0;
+        transition: all 350ms ease-in;
+    }
+    
+    .project-info:hover {
+        opacity: 1;
+    }
+    
+    @media (max-width: 520px) {
+        .project-info {
+            opacity: .8;
+        }
+    }
+    
+    .project-info-title {
+        margin: 0 0 .5em;
+        font-size: 2.5em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .project-info-button {
+        padding: .5em 1em;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid #f6f6f6;
+        border-radius: 3px;
+        transition: all 350ms;
+    }
+    
+    .project-info-button:hover {
+        color: #595959;
+        background: #f6f6f6;
+        border-color: #f6f6f6;
+    }
+    
+    .menu a {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        color: white;
+    }
+    
+    .logo {
+        font-size: 48px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        font-weight: bold;
+        border: none;
+        color: white;
+    }
+    
+    #home {}
+    
+    #home img {
+        width: 100%;
+    }
+    
+    #about,
+    #contacts {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #about .flex-container div {
+        padding-top: 20px;
+        padding-left: 80px;
+        padding-right: 0px;
+        width: 25%;
+        line-height: 30px;
+    }
+    
+    #about img {
+        padding-top: 20px;
+        width: 300%;
+        height: auto;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    
+    #about div h1,
+    #contacts div h1 {
+        margin-top: 0px;
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+    
+    #contacts {
+        height: 400px;
+    }
+    
+    #contacts div h1,
+    p a {
+        color: white;
+    }
+    
+    #contacts div p a {
+        font-size: 20px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    
+    #contacts .flex-container div {
+        padding-top: 30px;
+        padding-left: 80px;
+        padding-right: 80px;
+        width: 33%;
+    }
+    
+    #contacts img {
+        width: 28px;
+        height: 28px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    
+    .link {
+        margin-bottom: 20px;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .modal img {
+        max-height: 100%;
+        width: auto;
+    }
+    
+    .modal-content {
+        background: none;
+        margin: auto;
+        padding: 0px;
+        border: none;
+        width: 38%;
+        height: 100%;
+    }
+    
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="header header-fixed" id="header1">
+            <div class="logo">Marta Marchak</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#top" style="text-decoration:none">Home</a></li>
+                    <li><a href="#about" style="text-decoration:none">About</a></li>
+                    <li><a href="#portfolio" style="text-decoration:none">Portfolio</a></li>
+                    <li><a href="#contacts" style="text-decoration:none">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="home">
+            <div class="slider">
+                <div class="your-class">
+                    <div><img src="img/%D1%84%D0%BE%D1%88%D0%B8%D0%BA.jpg"></div>
+                    <div><img src="img/%D1%84%D0%BE%D1%88%D0%B8%D0%BA2.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <div id="about" class="section">
+            <div>
+                <h1>About</h1> </div>
+            <div class=" flex-container">
+                <div>
+                    <h3>I am Martha Marchak, I am nineteen years old. I’m studying graphic design at Lviv National Academy of Art. Before academy I studied at college Ivana Trusha at the same specialty.<br> In graphic design I work in such programs as: Adobe Photoshop, Adobe illustrator and Adobe Іndesign . Also in painting I work with watercolor and oil . I know the anatomy of a person very well. Also, I have many interests and hobbies, for example I'm often taking part in model shoots.</h3> </div>
+                <div> <img src="img/1.jpg"> </div>
+            </div>
+        </div>
+        <div id="portfolio" class="section">
+            <!-- start -->
+            <main id="main">
+                <nav class="nav"> <a href="#" class="nav-item active" data-rel="project">Всі</a> <a href="#" class="nav-item" data-rel="option-1">Рисунок</a> <a href="#" class="nav-item" data-rel="option-2">Скетч</a> <a href="#" class="nav-item" data-rel="option-3">Ілюстратор</a> </nav>
+                <ul class="portfolio">
+                    <li class="project option-1" id="img1">
+                        <div class="project-image"><img src="img/IMG_0838.JPG" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Face</h2>
+                            <p>Pencils 2016</p>
+                        </div>
+                    </li>
+                    <li class="project option-3" id="img2">
+                        <div class="project-image"><img src="img/IMG_0067.JPG" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Сook</h2>
+                            <p>Adobe Illustrator 2017</p>
+                        </div>
+                    </li>
+                    <li class="project option-1" id="img3">
+                        <div class="project-image"><img src="img/IMG_6613.JPG" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Anatomical torso</h2>
+                            <p>Liner 2015</p>
+                        </div>
+                    </li>
+                    <li class="project option-1" id="img4">
+                        <div class="project-image"><img src="img/6.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Woman</h2>
+                            <p>Pencils 2014</p>
+                        </div>
+                    </li>
+                    <li class="project option-3" id="img5">
+                        <div class="project-image"><img src="img/IMG_8099.JPG" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Milk Packing</h2>
+                            <p>Adobe Illustrator 2017</p>
+                        </div>
+                    </li>
+                    <li class="project option-2" id="img6">
+                        <div class="project-image"><img src="img/IMG_8659.JPG" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Sketches</h2>
+                            <p>Liner 2016</p>
+                        </div>
+                    </li>
+                    <li class="project option-2" id="img7">
+                        <div class="project-image"><img src="img/IMG_5416.JPG" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Sketches City</h2>
+                            <p>Pencils 2016</p>
+                        </div>
+                    </li>
+                    <li class="project option-2" id="img8">
+                        <div class="project-image"><img src="img/77.jpg" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Torso</h2>
+                            <p>Watercolor 2015</p>
+                        </div>
+                    </li>
+                    <li class="project option-3" id="img9">
+                        <div class="project-image"><img src="img/IMG_9998.JPG" /></div>
+                        <div class="project-info">
+                            <h2 class="project-info-title">Poster</h2>
+                            <p>Adobe Illustrator 2016</p>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+            <!-- kinec -->
+        </div>
+        <div id="contacts">
+            <div>
+                <h1>Contacts</h1> </div>
+            <div class="flex-container">
+                <div>
+                    <p><span><img src="img/gmail-logo.svg"></span><a style="text-decoration:none">martamarchak@gmail.com</a></p>
+                </div>
+                <div>
+                    <p><span><img src="img/facebook-logo.svg"></span><a href="https://www.facebook.com/marta.marchak.16" style="text-decoration:none">Marta Marchak</a></p>
+                </div>
+                <div>
+                    <p><span><img src="img/instagram-logo.svg"></span><a href="https://www.instagram.com/martuchas19/" style="text-decoration:none"><span class="link">martuchas19</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal">
+        <div class="modal-content"><img src="img/IMG_0838.JPG" /> </div>
+    </div>
+    <div id="myModal2" class="modal">
+        <div class="modal-content"><img src="img/IMG_0067.JPG" /> </div>
+    </div>
+    <div id="myModal3" class="modal">
+        <div class="modal-content"><img src="img/IMG_6613.JPG" /> </div>
+    </div>
+    <div id="myModal4" class="modal">
+        <div class="modal-content"><img src="img/6.jpg" /> </div>
+    </div>
+    <div id="myModal5" class="modal">
+        <div class="modal-content"><img src="img/IMG_8099.JPG" /> </div>
+    </div>
+    <div id="myModal6" class="modal">
+        <div class="modal-content"><img src="img/IMG_8659.JPG" /> </div>
+    </div>
+    <div id="myModal7" class="modal">
+        <div class="modal-content"><img src="img/IMG_5416.JPG" /> </div>
+    </div>
+    <div id="myModal8" class="modal">
+        <div class="modal-content"><img src="img/77.jpg" /> </div>
+    </div>
+    <div id="myModal9" class="modal">
+        <div class="modal-content"><img src="img/IMG_9998.JPG" /> </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav-item').click(function () {
+                // reset active class
+                $('.nav-item').removeClass("active");
+                // add active class to selected
+                $(this).addClass("active");
+                // return needed to make function work
+                return false;
+            });
+            $('.your-class').slick();
+            // Select all links with hashes
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]').not('[href="#0"]').click(function (event) {
+                    // On-page links
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000, function () {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) {
+                                    return false;
+                                }
+                                else {
+                                    $target.attr('tabindex', '-1');
+                                    $target.focus();
+                                };
+                            });
+                        }
+                    }
+                });
+            $(function () {
+                var selectedClass = "";
+                $(".nav-item").click(function () {
+                    selectedClass = $(this).attr("data-rel");
+                    $(".portfolio li").fadeOut(300);
+                    $(".portfolio li." + selectedClass).delay(300).fadeIn(300);
+                });
+            });
+            // Modals
+            var modal1 = document.getElementById('myModal1');
+            var modal2 = document.getElementById('myModal2');
+            var modal3 = document.getElementById('myModal3');
+            var modal4 = document.getElementById('myModal4');
+            var modal5 = document.getElementById('myModal5');
+            var modal6 = document.getElementById('myModal6');
+            var modal7 = document.getElementById('myModal7');
+            var modal8 = document.getElementById('myModal8');
+            var modal9 = document.getElementById('myModal9');
+            var btn1 = document.getElementById("img1");
+            var btn2 = document.getElementById("img2");
+            var btn3 = document.getElementById("img3");
+            var btn4 = document.getElementById("img4");
+            var btn5 = document.getElementById("img5");
+            var btn6 = document.getElementById("img6");
+            var btn7 = document.getElementById("img7");
+            var btn8 = document.getElementById("img8");
+            var btn9 = document.getElementById("img9");
+            btn1.onclick = function () {
+                modal1.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn1.onclick = function () {
+                modal1.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn2.onclick = function () {
+                modal2.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn3.onclick = function () {
+                modal3.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn4.onclick = function () {
+                modal4.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn5.onclick = function () {
+                modal5.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn6.onclick = function () {
+                modal6.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn7.onclick = function () {
+                modal7.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn8.onclick = function () {
+                modal8.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            btn9.onclick = function () {
+                modal9.style.display = "block";
+                var nav = document.getElementById('header1');
+                nav.style.position = "absolute";
+            }
+            window.onclick = function (event) {
+                if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target == modal4 || event.target == modal5 || event.target == modal6 || event.target == modal7 || event.target == modal8 || event.target == modal9) {
+                    modal1.style.display = "none";
+                    modal2.style.display = "none";
+                    modal3.style.display = "none";
+                    modal4.style.display = "none";
+                    modal5.style.display = "none";
+                    modal6.style.display = "none";
+                    modal7.style.display = "none";
+                    modal8.style.display = "none";
+                    modal9.style.display = "none";
+                    var nav = document.getElementById('header1');
+                    nav.style.position = "fixed";
+                }
+            }
+        });
+    </script>
+    <script>
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+
+</html>

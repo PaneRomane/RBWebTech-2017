@@ -1,0 +1,26 @@
+#about {
+
+    
+}
+#about img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+
+.about-text {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+
+}
+.Grid {
+  display: flex;
+}
+
+.Grid-cell {
+  flex: 1;
+}

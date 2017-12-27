@@ -1,0 +1,32 @@
+#contacts {
+
+}
+.contacts-text {
+    font-family: sans-serif;
+}
+#contacts p {
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+#contacts a {
+    color: #333;
+}
+#contacts a:hover {
+    color: #555;
+}
+#contacts svg {
+    font-size: 48px;
+    color: inherit;
+}
+#contacts img {
+    border-radius: 50%;
+    display: inline-block;
+    float: inherit;
+}
+#contacts .icons {
+    width: 40%;
+      margin-left: auto;
+    margin-right: auto;  
+}

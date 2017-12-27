@@ -1,0 +1,13 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    height: 100%;
+}
+
+.section {
+    min-height: 20%;
+}

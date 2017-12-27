@@ -1,0 +1,30 @@
+#about {
+    background-color:#FFFCFA;
+    font-family: 'Amatic SC', sans-serif;
+   font-weight: 600;
+    font-size: 30pt;
+    color: #94DBFF; 
+    text-align: center;
+   
+    
+}
+
+#about img {
+    border-radius: 0%;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin-top: 10px;  
+}
+
+#about p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 15pt;
+    color:#595959;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+
+   
+}

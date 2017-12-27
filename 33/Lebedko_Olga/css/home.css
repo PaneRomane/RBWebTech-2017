@@ -1,0 +1,57 @@
+#home {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#home img {
+    height: auto;
+}
+
+/* from https://projects.lukehaas.me/scrollify/style/main.css */
+.scroll {
+    position: absolute;
+    bottom: 100px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;    
+    display: block;
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    font-size: 14px;    
+    text-decoration: none;
+    color: #000;
+}
+.scroll:after {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(45deg);
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    right: 0;
+    left: 0;
+    animation: 3s arrow infinite ease;
+}
+@-webkit-keyframes arrow {
+	0%,100% {
+		top:10px;
+	}
+	50% {
+		top:30px;
+	}
+}
+@keyframes arrow {
+	0%,100% {
+		top:10px;
+	}
+	50% {
+		top:30px;
+	}
+}

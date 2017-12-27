@@ -1,0 +1,327 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+    font-family: 'Bad Script';
+    font-weight: bolder;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+}
+
+.section {
+    min-height: 100%;
+    padding-top: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+#top {
+    background-repeat: no-repeat;
+    background-color: #26252A;
+    animation-name: TopUmageFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes TopUmageFadeInOut {
+    0% {
+        background-image: url(../img/Nika1.png);
+    }
+    23% {
+        background-image: url(../img/Nika1.png);
+    }
+    33% {
+        background-image: url(../img/Nika2.png);
+    }
+    56% {
+        background-image: url(../img/Nika2.png);
+    }
+    66% {
+        background-image: url(../img/Nika3.png);
+    }
+    100% {
+        background-image: url(../img/Nika3.png);
+    }
+}
+
+#about {
+    background-color: #F8F9FA;
+}
+
+#portfolio {
+    background-color: #F8F9FA;
+}
+
+#contacts {
+    background-color: #26252A;
+}
+
+#contacts h1 {
+    color: white;
+}
+
+h1 {
+    margin: 10px 0px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+.basic-button {
+    margin: 0px 12px 5px 1px;
+    background-color: #FED136;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Bad Script', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+.basic-button:focus,
+.basic-button:hover {
+    background-color: #FED136;
+    color: white;
+    -webkit-box-shadow: -2px 2px 5px 1px #a3a3a3;
+    -moz-box-shadow: -2px 2px 5px 1px #a3a3a3;
+    box-shadow: -2px 2px 5px 1px #a3a3a3;
+    margin: -1px 11px 5px 1px;
+    border-bottom: solid 1px #aaa;
+    border-left: solid 1px #aaa;
+}
+
+.info {
+    color: white;
+    text-align: center;
+}
+
+.info-header {
+    font-size: 30px;
+}
+
+.info-text {
+    font-size: 40px;
+}
+
+.about-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.feedback-input {
+    color: #3c3c3c;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+
+.feedback-input:focus {
+    background: #fff;
+    border: 3px solid #FED136;
+    color: black;
+    outline: none;
+}
+
+#name {
+    background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#email {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+#comment {
+    background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
+}
+
+/* this demo specifc styles */
+
+.galleryWrap img {
+    width: 200px;
+    height: 200px;
+}
+
+.portfolio-wrapper {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.imgContainer {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    border: solid 1px #999;
+    display: block;
+}
+
+.imgContainer:hover {
+    border-bottom: solid 1px #444;
+    border-left: solid 1px #444;
+    -webkit-box-shadow: -3px 3px 10px 1px #777;
+    -moz-box-shadow: -3px 3px 10px 1px #777;
+    box-shadow: -3px 3px 10px 1px #777;
+    margin: 9px 9px 11px 11px;
+}
+
+#galleryTab {
+    margin-bottom: 10px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.galleryWrap {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 30px;
+}
+
+.filter {
+    color: black;
+    background-color: #FED136;
+    margin: 0px 12px 5px 1px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.filter:hover {
+    color: white;
+    -webkit-box-shadow: -2px 2px 5px 1px #a3a3a3;
+    -moz-box-shadow: -2px 2px 5px 1px #a3a3a3;
+    box-shadow: -2px 2px 5px 1px #a3a3a3;
+    margin: -1px 11px 5px 1px;
+    border-bottom: solid 1px #aaa;
+    border-left: solid 1px #aaa;
+}
+
+.filter.active {
+    border: 1px solid #ccc;
+    color: white;
+    margin: 0px 12px 4px 0px;
+    cursor: default;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.simple-menu {
+    background-color: #171619;
+}
+
+.simple-menu ul {
+    text-align: center;
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.simple-menu ul a {
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.sliding-line {
+    background-color: #FED136!important;
+}
+
+.active a {
+    color: #FED136!important;
+}
+
+.simple-menu a:hover {
+    color: #FED136;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .section-content {
+        width: 90%;
+    }
+    .simple-menu ul {
+        background-color: #38353D;
+    }
+    .simple-menu li {
+        text-align: center;
+    }
+    .simple-menu a {
+        border-bottom: 1px solid #79896d;
+    }
+    .btn-menu {
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+}

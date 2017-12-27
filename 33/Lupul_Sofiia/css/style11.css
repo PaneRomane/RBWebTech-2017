@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after 
+{
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    min-height: 100%;
+    align-items: center;
+}
+#home { 
+    background-color: azure;}
+
+
+header {
+    height: 80px;
+    background-color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{   
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.logo{
+    margin-top: 9px;
+    font-family: 'Zeyada', cursive;
+    font-size: 50px;
+    color: #A50C23;
+    
+}
+nav{}
+nav ul{
+    padding: 15px;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+nav ul li a{
+    font-family: 'Avenir Next',sans-serif;
+    font-size: 25px;
+    color: #363232;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li a:after{
+    background-color: #31312d;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    
+}
+
+nav ul li a:hover:after,
+nav ul li a:focus:after {
+    width: 100%;
+}
+
+
+
+#fader {
+ position: relative;
+ width: 100%;
+ height: 200px;
+ margin: 0 auto;
+
+}
+ 
+#fader img {
+ position: absolute;
+ background-color: #f3f4ef;
+ top: 0;
+ left: 0;
+ max-width: 100%;
+ height: auto;
+}
+
+#context {
+    position: relative;
+}
+
+
+

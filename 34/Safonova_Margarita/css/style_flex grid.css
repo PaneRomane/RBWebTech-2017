@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+    align-content: flex-start;
+    flex-direction:row;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.inside {
+  padding: 5px;
+  font-size:1em;
+}
+
+h3 {
+  text-align: center;
+}
+.header {
+   width:100%;    
+}
+.aside1 {
+    width:25%;
+}
+.main {    
+ width:50%;
+}
+.main .inside {
+    padding:20px 10px;
+}
+.aside2 {
+  width:25%;
+}
+.footer {
+   width:100%;
+}

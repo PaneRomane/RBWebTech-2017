@@ -1,0 +1,20 @@
+#contacts {
+
+}
+
+#contacts p {
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+#contacts a {
+    color: #333;
+}
+#contacts a:hover {
+    color: #555;
+}
+#contacts svg {
+    font-size: 48px;
+    color: inherit;
+}

@@ -1,0 +1,24 @@
+#contacts {
+
+}
+
+#contacts p {
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    color: rgb(116, 39, 39)
+}
+#contacts h2 {
+    color: rgb(172, 38, 38);
+}
+#contacts a {
+    color: rgb(211, 96, 96);
+}
+#contacts a:hover {
+    color: rgb(172, 38, 38);
+}
+#contacts svg {
+    font-size: 55px;
+    color: inherit;
+}

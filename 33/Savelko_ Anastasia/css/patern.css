@@ -1,0 +1,33 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body { 
+			background-image: url(../img/) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+}
+
+.slide {
+  height: 100%; 
+  width: 100%; 
+}
+
+.message {
+ 
+  height:45%;
+  bottom: 0; 
+  display: block;
+  position: absolute;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 2em;
+}
+

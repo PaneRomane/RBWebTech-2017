@@ -1,0 +1,16 @@
+#contacts {
+    font-size: 25pt;
+padding: 20px;
+    color: black;
+}
+#contacts h2{
+font-size: 35pt;
+color: #17402F;
+margin: 10px;
+}
+#contacts p {
+    font-size: 15pt;
+}
+.col text-center {
+    flex-direction:row;
+}

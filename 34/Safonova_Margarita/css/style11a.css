@@ -1,0 +1,68 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    height: 100%;
+}
+.wrapper > * {
+}
+.section {
+    min-height: 100%;
+}
+#home {
+    background-color: antiquewhite;
+}
+#about { 
+    background-color: aliceblue;
+}
+#portfolio {
+    background-color: beige;
+}
+#contacts {
+    background-color: #dddcf5;
+}
+.header-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 2017;
+    width: 100%;
+    background-color: inherit;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header > * {
+    flex: 1;
+}
+
+.header .logo {
+    flex: 3; 
+} 
+.header nav {
+    flex: 8;
+}
+.header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+} 
+.header nav li {
+    flex: 1;
+}
+#about  {
+    text-align: center;
+}
+#about p {
+    font-family: 'Lora', serif;
+    font-size: 14pt;
+    line-height: 1.5em;
+}
+#about img {
+    border-radius: 200px;
+}

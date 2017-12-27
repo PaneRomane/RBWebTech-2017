@@ -1,0 +1,54 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a
+{
+    color: #17402F;
+}
+.header-fixed{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 20pt;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #17402F;
+    
+}
+    
+.logo
+{font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 45pt;
+    color: #17402F;
+}
+.header > * {
+    flex: 1;
+       
+}
+.header .logo{
+    flex: 3;
+    
+}
+.header nav {
+    flex: 8;
+    
+}
+.header nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+}
+.header nav li{
+    flex: ;
+}
+

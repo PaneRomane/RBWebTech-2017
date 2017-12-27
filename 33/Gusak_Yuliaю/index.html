@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Portfolio</title>
+	<meta name="description" content="Portfolio">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" type="text/css" href="libs/popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="libs/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="header header-fixed">
+        <div class="navbar ">
+            <div class="logo"><a href="#home">Юлія Гусак</a></div>
+            <input type="checkbox" id="navbar-toggle" >
+            <label for="navbar-toggle"><i></i></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#about">Про мене</a></li>
+					<li><a href="#portfolio">Портфоліо</a></li>
+					<li><a href="#contact">Контакти</a></li>
+				</ul>
+			</nav>
+				
+			</div>
+				
+		</div>
+	
+	</header>
+	<section id="home">
+				<div class="home-wrap">
+					<div class="home-composition">
+						<h1>Юлія Гусак</h1>
+						<p>Ілюстратор, дизайнер.</p>
+					</div>
+				</div>
+				<div id="slideshow">
+					<div class="img-slide" style="background: url(img/photo10.jpg);background-size: cover;background-position: center bottom;"></div>
+					<div class="img-slide" style="background: url(img/гол1.jpg);background-size: cover;background-position: center bottom;"></div>
+					<div class="img-slide" style="background: url(img/гол2.jpg);background-size: cover;background-position: center bottom;"></div>
+				</div>
+	</section>
+
+
+	<div id="about" class="section">
+        <div class="row">
+           <div class="col text-center">
+                <h2>Про мене</h2>
+					<img src="img/глф.jpg" alt="photo" class="photo img-responsive">
+					<p>Народилася 13.05.1997 року у місті Павлоград. З дитинства захоплювалася малюванням і брала участь у виставках. Навчаюсь у Львівській Академії мистецтв на кафедрі графічного дизайну.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<h2>Портфоліо</h2>
+				<div class="portfolio">
+					
+					<ul class="portfolio-buttons">
+						<li data-filter="all">Всі</li>
+						<li data-filter=".photo-work">Фотосправа</li>
+						<li data-filter=".illustration">Ілюстрація</li>
+						<li data-filter=".fonts">Шрифти</li>
+					</ul>
+
+					<div class="portfolio-container">
+
+						<div class="mix photo-work portfollio-item">
+						<img src="img/фото5в.jpg" alt="main" class="img-responsive">
+
+							<div class="hidden-item">
+								<a href="img/фото5.jpg" class="popup-link">Переглянути</a>
+							</div>
+	
+						</div>
+
+						<div class="mix fonts portfollio-item">
+							<img src="img/шрив.jpg" alt="main" class="img-responsive">
+
+							<div class="hidden-item">
+								<a href="img/шри.jpg" class="popup-link">Переглянути</a>
+							</div>
+						</div>
+
+						<div class="mix photo-work portfollio-item">
+							<img src="img/фото2в.jpg" alt="main" class="img-responsive">
+							<div class="hidden-item">
+								<a href="img/фото2.jpg" class="popup-link">Переглянути</a>
+							</div>
+						</div>
+						<div class="mix illustration portfollio-item">
+							<img src="img/іл2а.jpg" alt="main" class="img-responsive">
+							<div class="hidden-item">
+								<a href="img/іл2.jpg" class="popup-link">Переглянути</a>
+							</div>		
+						</div>
+						<div class="mix fonts portfollio-item">
+							<img src="img/фото4ф.jpg" alt="main" class="img-responsive">
+							<div class="hidden-item">
+								<a href="img/фото4.jpg" class="popup-link">Переглянути</a>
+							</div>
+						</div>
+						<div class="mix illustration portfollio-item">
+							<img src="img/іл1й.jpg" alt="main" class="img-responsive">
+							<div class="hidden-item">
+								<a href="img/іл1.jpg" class="popup-link">Переглянути</a>
+							</div>
+						</div>
+						<div class="mix fonts portfollio-item">
+							<img src="img/шрифт4в.jpg" alt="main" class="img-responsive">
+							<div class="hidden-item">
+								<a href="img/шрифт4.jpg" class="popup-link">Переглянути</a>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="main-form-wrap">
+					<div class="contacts col-md-6">
+						<h2>Контакти</h2>
+						<div class="contacts-item">
+							<i class="fa fa-map-marker"></i>
+							<p>вул. Кримська, 30 <br>
+							м. Львів, Україна 79049</p>
+						</div>
+						<div class="contacts-item">
+							<i class="fa fa-envelope-o"></i>
+							<p>yuliagusak13@gmail.com</p>
+						</div>
+						<div class="contacts-item">
+							<i class="fa fa-phone"></i>
+							<p>+380990624413</p>
+						</div>	
+					</div>
+
+					
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="social">
+					<a href="https://www.facebook.com/profile.php?id=100006442806706"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/julhusak/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.behance.net/yuliagusakbb90"><i class="fa fa-behance-square"></i></a>
+				</div>
+				<p class="year">Львів<br>
+					2017 рік
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/waipoints/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="libs/mixitup/mixitup.min.js"></script>
+	<script type="text/javascript" src="libs/progressbar/dist/progressbar.js"></script>
+	<script type="text/javascript" src="libs/popup/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js
+"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.5/js/lightgallery-all.min.js
+"></script>
+
+	
+
+    <!-- slick slider  -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js
+"></script>
+    <script>
+    $(document).ready(function(){
+     $('#slideshow').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            fade: true,
+            cssEase: 'linear',        
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            arrows: false,
+            dots: false
+        });
+    });
+    </script>
+</body>
+</html>

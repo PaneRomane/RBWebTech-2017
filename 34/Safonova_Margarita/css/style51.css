@@ -1,0 +1,32 @@
+h1 {
+    font-style: italic;
+}
+.header {
+    font-size: 52px;
+}
+#header1 {
+    background: yellow;
+}
+
+.error {
+    color: red;
+    text-decoration: line-through;
+}
+
+* {
+    font-family: Arial, Times, serif;
+}
+
+.ex2 {
+    background: green;
+}
+.ex1 {
+    background: yellow;
+}
+
+div {
+    background: red;
+    color: white;
+    padding: 10px;
+}
+

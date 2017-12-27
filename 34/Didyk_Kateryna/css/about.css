@@ -1,0 +1,33 @@
+#about {}
+
+.well {
+    width: 100%;
+    background-position: center top;
+    margin: 5% auto;
+    max-width: auto;
+    text-align: center;
+}
+
+.headliner {
+    padding: 0%;
+}
+
+.container-fluid h2 {
+    color: #fa98a4;
+    text-align: center;
+}
+
+.container-fluid a {
+    clear: both;
+    margin: 0 20% 15% 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1em;
+    color: #452b36;
+}
+
+.img-circle {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}

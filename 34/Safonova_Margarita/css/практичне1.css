@@ -1,0 +1,10 @@
+h1, h2, p, div {
+  border: 1px solid;
+  padding: 5px;
+  margin-bottom: 1em;
+}
+
+b, em, q, a {
+  border: 1px dashed red;
+  padding: 5px;
+}

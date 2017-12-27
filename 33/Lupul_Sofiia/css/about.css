@@ -1,0 +1,31 @@
+#about {
+    margin-top: 10px;
+    height: 500px;
+    background-color: white;
+}
+
+.aboutTitle{
+     font-family: 'Avenir-Heavy',sans-serif;
+    font-size: 40px;
+    width: 100px;
+    margin: 0 auto;
+    padding-top:30px;
+}
+
+#flex-container{
+    flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	display: flex;
+	font-size: 25px;
+    font-family: 'Zeyada', cursive;
+	width: 900px;
+    margin: auto;
+    margin-top:40px;
+}
+
+#flex-container > div{
+   
+	width: 300px;
+	
+}
